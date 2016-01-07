@@ -1,0 +1,26 @@
+pt-BR:
+  activerecord:
+    models:
+      student: Estudante
+      course: Curso
+      classroom: Sala de aula
+    attributes:
+      student:
+        id: "#"
+        name: "Nome"
+        register_number: "Número de Registro"
+        status: "Status"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      course:
+        id: "#"
+        name: "Nome"
+        description: "Descrição"
+        status: "Status"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      classroom:
+        id: "#"
+        student: "Estudante"
+        course: "Curso"
+        entry_at: "Entrada em"

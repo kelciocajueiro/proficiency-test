@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= simple_form_for(@course) do |f| %>
+      <%= f.error_notification %>
+
+      <%= f.input :name %>
+      <%= f.input :description %>
+
+      <div style="height:62px;">
+        <%= f.label "Status" %> </br>
+        <%= f.check_box :status %> Ativo
+      </div>
+
+      <%= f.submit "Cadastrar", class: "btn btn-primary" %>
+      <%= link_to 'Voltar', courses_path, class: 'btn btn-default botaoVoltar' %>
+    <% end %>
+  </div>
+</div>

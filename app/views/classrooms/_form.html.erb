@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= simple_form_for(@classroom) do |f| %>
+      <%= f.error_notification %>
+
+      <%= f.association :student %>
+      <%= f.association :course %>
+      <%= f.input :entry_at %>
+
+      <%= f.submit "Cadastrar", class: "btn btn-primary" %>
+      <%= link_to 'Voltar', classrooms_path, class: 'btn btn-default botaoVoltar' %>
+    <% end %>
+  </div>
+</div>

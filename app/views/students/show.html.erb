@@ -1,0 +1,21 @@
+<p id="notice" class="bg-success"><%= notice %></p>
+
+<p>
+  <strong><%= Student.human_attribute_name(:name) %>:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong><%= Student.human_attribute_name(:register_number) %>:</strong>
+  <%= @student.register_number %>
+</p>
+
+<p>
+  <strong><%= Student.human_attribute_name(:status) %>:</strong>
+  <span class="<%= @student.status? ? 'label label-success' : 'label label-danger' %>">
+    <%= @student.status? ? "ATIVO" : "INATIVO" %>
+  </span>
+</p>
+
+<%= link_to 'Editar', edit_student_path(@student), class: 'btn btn-primary' %>
+<%= link_to 'Voltar', students_path, class: 'btn btn-primary' %>

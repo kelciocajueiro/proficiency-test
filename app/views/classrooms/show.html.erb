@@ -1,0 +1,19 @@
+<p id="notice" class="bg-success"><%= notice %></p>
+
+<p>
+  <strong><%= Classroom.human_attribute_name(:student) %>:</strong>
+  <%= @classroom.student.name %>
+</p>
+
+<p>
+  <strong><%= Classroom.human_attribute_name(:course) %>:</strong>
+  <%= @classroom.course.name %>
+</p>
+
+<p>
+  <strong><%= Classroom.human_attribute_name(:entry_at) %>:</strong>
+  <%= @classroom.entry_at %>
+</p>
+
+<%= link_to 'Editar', edit_classroom_path(@classroom), class: 'btn btn-primary' %>
+<%= link_to 'Voltar', classrooms_path, class: 'btn btn-primary' %>
